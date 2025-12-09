@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Final Escape</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- . -->
+    <div class="row light-grey" id="one">
+      <div class="colmn black center-content">
+        <text> Save Eric?</text>
+      </div>
+      <div class="colmn black center-content">
+        <text> Save Yourself?</text>
+      </div>
+    </div>
+    <div class="section center-content" id="two">
+      <text id="text"> art is coming...</text>
+      <text id="timerText">Time left: 10</text>
+    </div>
+
+    <div class="row2" id="three">
+      <div class="colmn black center-content">
+        <img
+          src="images/prison.jpg"
+          class="contain-img clickk"
+          onclick="saveEric()"
+        />
+      </div>
+      <div class="colmn black center-content">
+        <img
+          src="images/exit.png"
+          class="contain-img clickk"
+          onclick="saveSelf()"
+        />
+      </div>
+    </div>
+    <div class="jumpscare" id="jumpscare"></div>
+    <div class="escape" id="escape"></div>
+
+    <div class="modal center-content" id="modal">
+      <div class="modal-mirror black center-content">
+        <div class="rowModal center-content">
+          <img
+            src="images/redArrow-removebg-preview.png"
+            onclick="startTimer()"
+            class="contain-image clickk"
+          />
+          <text>You made it...</text>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <audio src="sounds/intense.mp3" type="audio/mp3" id="intense"></audio>
+  <audio
+    src="sounds/jumpscare-volume-adjusted.mp3"
+    type="audio/mp3"
+    id="scare"
+  ></audio>
+  <audio src="sounds/escapedMusic.mp3" type="audio/mp3" id="escaped"></audio>
+  <script src="script.js"></script>
+</html>
